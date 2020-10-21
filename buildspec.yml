@@ -2,22 +2,22 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 14
-      yarn: 1.22
-  build:
     commands:
-      - echo Building the Node code...
-      - cd $CODEBUILD_SRC_DIR/nodejs-app
-
+      - echo Installling Node 14...
+      - curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+      - apt-get install -y nodejs
+      - echo Installling Yarn ...
+      - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+      - echo "deb https://dl.yarnpkg.com/debian/ stable main" |sudo tee /etc/apt/sources.list.d/yarn.list
+      - apt-get install --no-install-recommends yarn
   pre_build:
     commands:
       - yarn
   build:
     commands:
       - yarn build
-  artifacts:
-    files:
-      - "**/*"
-    discard-paths: no
-    base-directory: build
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: build
