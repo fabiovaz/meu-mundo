@@ -1,17 +1,17 @@
 import React from 'react';
 import Cat from '../../assets/cat.gif';
 import HeaderMe from '../../components/HeaderMe';
-import { ContainerInformations, MyInformations } from './styles';
+import { ContainerInformations, Content, MyInformations } from './styles';
 
 
 const Me: React.FC = () => {
   document.body.style.background = "#c8d6e5";
   return (
-    <>
+    <Content>
       <HeaderMe />
       <ContainerInformations>
         <MyInformations>
-          <h2>Primeiramente Bem vindo:</h2>
+          <h2>Bem vindo:</h2>
           <p>Vocês com certeza devem estar se perguntando quem é esse gato tão lindo?</p>
           <p> Eu vou explicar esse rapaz além de lindo, engraçado é também um programador muito determinado
         e ama o que faz.</p>
@@ -24,7 +24,7 @@ const Me: React.FC = () => {
           <img src={Cat} alt="Cat" />
         </aside>
       </ContainerInformations>
-    </>
+    </Content>
   );
 }
 

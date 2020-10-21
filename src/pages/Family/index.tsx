@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderMe from '../../components/HeaderMe';
 import SimpleSlider from '../../components/SimpleSlide';
-import { Container } from './styles';
+import { Container, ContainerInformation } from './styles';
 
 
 
@@ -11,9 +11,9 @@ const Family: React.FC = () => {
   return (
     <Container>
       <HeaderMe />
-      <h1>Família</h1>
-
-      <SimpleSlider />
+      <ContainerInformation>
+        <SimpleSlider />
+      </ContainerInformation>
 
     </Container >
   );

@@ -4,12 +4,16 @@ interface ContentProps {
   play: boolean;
 }
 
+export const Contender = styled.div`
+height:100vh;
+`;
+
 export const Content = styled.div<ContentProps>`
+margin: 5% 5% 0 5%;
+height:80%;
 display:flex;
 align-items:center;
 justify-content:center;
-margin:30px;
-height:500px;
 animation-play-state: ${props => (props.play ? 'running' : 'paused')};
 background-color: rgb(255,255,255);
     animation-name: colorchange;

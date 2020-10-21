@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 
 export const Header = styled.div`
-width: 100vw;
+width: 100%;
 color: #222f3e;
 display:flex;
 align-items:center;
-height:50px;
+height:70px;
 
 @media (max-width: 700px){
   display:flex;
@@ -37,7 +37,7 @@ justify-content:center;
 align-self:center;
 
 
-font-size:24px;
+font-size:34px;
 font-weight:bold;
 
 

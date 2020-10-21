@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
+
+export const Contender = styled.div`
+height: 100vh;
+`;
 export const Header = styled.div`
 width: 100vw;
 color: #222f3e;
@@ -49,23 +53,32 @@ color: #ecf0f1;
 
 
 export const Content = styled.div`
+margin-top: 5%;
+width:100%;
 display:flex;
-justify-content:left;
-margin:50px;
-display:flex;
+flex-wrap:wrap;
+justify-content:center;
 `;
 
 
 export const Item = styled.div`
 border-radius:20px;
+margin: 3%;
 background: #ecf0f1 ;
+height:250px;
+width: 300px;
+
+& + &{
+  margin: 3%;
+}
+`;
+
+export const Linkto = styled(Link)`
 display:flex;
 align-items:center;
 flex-direction:column;
-height:250px;
-width: 300px;
-`;
-
+text-decoration:none;
+`
 export const ItemImg = styled.img`
 margin:10px;
 height:200px;

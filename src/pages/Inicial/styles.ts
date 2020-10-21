@@ -1,4 +1,5 @@
 import { shade } from 'polished';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -65,4 +66,10 @@ font-weight:bold;
 &:hover{
   background:${shade(0.2, '#00b4d8')}
 }
+`;
+
+
+export const Linkto = styled(Link)`
+text-decoration:none;
+color: #fff;
 `;

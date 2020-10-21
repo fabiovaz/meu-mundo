@@ -1,24 +1,18 @@
 import styled from 'styled-components';
 export const Container = styled.div`
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-color: #222f3e;
+height:100vh;
 
-h1{
-  margin-top:20px;
-  font-size:40px;
-  font-weight:bold;
+@media (max-width: 700px){
+  height:100%
 }
 `;
 export const ContainerInformation = styled.div`
-border:1px solid red;
-margin-top:36px;
+
+margin-top:5%;
 display:flex;
 flex-direction:row;
 align-items:center;
-justify-content:space-around;
+justify-content:center;
 
 @media (max-width: 700px){
   flex-direction:column;
@@ -26,14 +20,3 @@ justify-content:space-around;
 `;
 
 
-export const Item = styled.div`
-display:flex;
-align-items:center;
-flex-direction:column;
-border:1px solid;
-
-img {
-  height:400px;
-  margin-left:10px;
-}
-`;

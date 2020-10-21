@@ -8,7 +8,6 @@ const Skills: React.FC = () => {
   return (
     <Container>
       <HeaderMe />
-      <h1>Habilidades</h1>
       <ContainerInformation>
         <CartSkills>
           <h2>Linguagens e Banco de dados:</h2>

@@ -1,18 +1,15 @@
 import styled from 'styled-components';
 export const Container = styled.div`
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-color: #222f3e;
+height:100vh;
 
-h1{
-  margin-top:20px;
-  font-size:40px;
-  font-weight:bold;
+@media (max-width: 700px){
+  height:100%
 }
 `;
 export const ContainerInformation = styled.div`
+margin-top:20px;
+height:80%;
+color: #222f3e;
 display:flex;
 width:100%;
 align-items:center;
@@ -32,7 +29,6 @@ flex-direction:column;
 justify-content:center;
 margin:10px 10px;
 border-radius: 20px;
-height:100%;
 box-shadow: 5px 5px 5px black;
 
 background:#f5f6fa;

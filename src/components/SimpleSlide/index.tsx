@@ -21,28 +21,28 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1
     };
     return (
-      <div style={{ width: '300px', color: "#000" }} >
+      <div style={{ width: '420px', color: "#000" }} >
         <Slider {...settings}>
           <div>
-            <img style={{ width: '300px' }} src={Cicero} alt="Cicero" />
+            <img src={Cicero} alt="Cicero" />
           </div>
           <div>
-            <img style={{ width: '300px' }} src={Raquel} alt="Cicero" />
+            <img src={Raquel} alt="Cicero" />
           </div>
           <div>
-            <img style={{ width: '300px' }} src={Caio} alt="Cicero" />
+            <img src={Caio} alt="Cicero" />
           </div>
           <div>
-            <img style={{ width: '300px' }} src={Filipe} alt="Cicero" />
+            <img src={Filipe} alt="Cicero" />
           </div>
           <div>
-            <img style={{ width: '300px' }} src={Guilherme} alt="Cicero" />
+            <img src={Guilherme} alt="Cicero" />
           </div>
           <div>
-            <img style={{ width: '300px' }} src={Besouro} alt="Cicero" />
+            <img src={Besouro} alt="Cicero" />
           </div>
           <div>
-            <img style={{ width: '300px' }} src={Vinicius} alt="Cicero" />
+            <img src={Vinicius} alt="Cicero" />
           </div>
         </Slider>
       </div>

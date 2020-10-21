@@ -1,10 +1,21 @@
 import { shade } from 'polished';
 import styled from 'styled-components';
 
+
+export const Content = styled.div`
+height:100vh;
+
+@media (max-width: 700px){
+  height:100%
+}
+`;
+
 export const ContainerInformations = styled.div`
+height:80%;
 display:flex;
-place-content:center;
-margin-top:60px;
+align-items:center;
+justify-content:center;
+margin-top:40px;
 aside{
   margin-right:5px;
   img{
@@ -52,8 +63,6 @@ p{
 
 }
 @media (max-width: 720px){
-  height:100%;
-  width: 400px;
   h2{
   font-size:25px;
   }

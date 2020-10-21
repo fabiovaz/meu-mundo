@@ -9,6 +9,11 @@ align-items:center;
 align-self:center;
 justify-content:center;
 
+@media (max-width: 700px){
+  height:100%;
+  width:100%;
+  flex-direction:column;
+}
 `;
 
 
@@ -25,11 +30,26 @@ h2{
   margin-top:30px;
   font-weight:bold;
 }
+
+
+@media (max-width: 700px){
+  width:100%;
+
+  h1{
+  font-size:50px;
+  text-align:center;
+  font-weight:bold;
+}
+
+h2{
+  margin-top:5%;
+}
+}
 `;
 
 
 export const ImageContent = styled.img`
-margin-left:50px;
+margin:5%;
 border-radius:40%;
 width: 300px;
 `;

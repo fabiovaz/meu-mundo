@@ -1,11 +1,10 @@
 import React from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
 import backgroundChangeImg from '../../assets/background.gif';
-import { Content, Header, HeaderButton, Item, ItemImg, ItemText, Links, TextHeader } from './styles';
+import { Contender, Content, Header, HeaderButton, Item, ItemImg, ItemText, Links, Linkto, TextHeader } from './styles';
 const Lab: React.FC = () => {
   return (
-    <>
+    <Contender>
       <Header>
         <Links to='/' >
           <HeaderButton> <FiArrowLeft size={34} color="#ecf0f1" /> </HeaderButton>
@@ -16,18 +15,68 @@ const Lab: React.FC = () => {
 
       </Header>
       <Content>
-        <Link to='background'>
-          <Item>
+        <Item>
+          <Linkto to='background'>
             <ItemImg src={backgroundChangeImg} >
 
             </ItemImg>
             <ItemText>
               ChangeBackgroundColor
           </ItemText>
-          </Item>
-        </Link>
+          </Linkto>
+        </Item>
+        <Item>
+          <Linkto to='background'>
+            <ItemImg src={backgroundChangeImg} >
+
+            </ItemImg>
+            <ItemText>
+              ChangeBackgroundColor
+          </ItemText>
+          </Linkto>
+        </Item>
+        <Item>
+          <Linkto to='background'>
+            <ItemImg src={backgroundChangeImg} >
+
+            </ItemImg>
+            <ItemText>
+              ChangeBackgroundColor
+          </ItemText>
+          </Linkto>
+        </Item>
+        <Item>
+          <Linkto to='background'>
+            <ItemImg src={backgroundChangeImg} >
+
+            </ItemImg>
+            <ItemText>
+              ChangeBackgroundColor
+          </ItemText>
+          </Linkto>
+        </Item>
+        <Item>
+          <Linkto to='background'>
+            <ItemImg src={backgroundChangeImg} >
+
+            </ItemImg>
+            <ItemText>
+              ChangeBackgroundColor
+          </ItemText>
+          </Linkto>
+        </Item>
+        <Item>
+          <Linkto to='background'>
+            <ItemImg src={backgroundChangeImg} >
+
+            </ItemImg>
+            <ItemText>
+              ChangeBackgroundColor
+          </ItemText>
+          </Linkto>
+        </Item>
       </Content>
-    </>
+    </Contender>
   );
 }
 
