@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import Besouro from '../../assets/besouro.jpeg';
-import Caio from '../../assets/caio.jpeg';
-import Cicero from '../../assets/cicero.jpeg';
-import Filipe from '../../assets/filipeCart.jpeg';
-import Guilherme from '../../assets/guilherme.jpeg';
-import Raquel from '../../assets/raquel.jpeg';
-import Vinicius from '../../assets/vinicius.jpeg';
+import Besouro from '../../assets/besouro.jpg';
+import Caio from '../../assets/caio.jpg';
+import Cicero from '../../assets/cicero.jpg';
+import Filipe from '../../assets/filipeCart.jpg';
+import Guilherme from '../../assets/guilherme.jpg';
+import Raquel from '../../assets/raquel.jpg';
+import Vinicius from '../../assets/vinicius.jpg';
 
 export default class SimpleSlider extends Component {
   render() {
