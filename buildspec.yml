@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo Installling Node 14...
-      - curl -sL https://deb.nodesource.com/setup_14.x | -E bash -
+      - curl -sL https://deb.nodesource.com/setup_14.x | bash -
       - apt install -y nodejs
       - echo Installling Yarn ...
       - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
@@ -16,8 +16,8 @@ phases:
   build:
     commands:
       - yarn build
-artifacts:
-  files:
-    - "**/*"
-  discard-paths: no
-  base-directory: build
+  artifacts:
+    files:
+      - "**/*"
+    discard-paths: no
+    base-directory: build
