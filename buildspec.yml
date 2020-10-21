@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Installling Node 14...
       - curl -sL https://deb.nodesource.com/setup_14.x
-      - apt-get install -y nodejs
+      - apt install -y nodejs
       - node -v
       - echo Installling Yarn ...
       - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
