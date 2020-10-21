@@ -11,7 +11,7 @@ const Me: React.FC = () => {
       <HeaderMe />
       <ContainerInformations>
         <MyInformations>
-          <h2>Primeiramente Bem vindo :</h2>
+          <h2>Primeiramente Bem vindo:</h2>
           <p>Vocês com certeza devem estar se perguntando quem é esse gato tão lindo?</p>
           <p> Eu vou explicar esse rapaz além de lindo, engraçado é também um programador muito determinado
         e ama o que faz.</p>
