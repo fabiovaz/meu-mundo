@@ -6,6 +6,7 @@ import Inicial from '../pages/Inicial';
 import Lab from '../pages/lab';
 import Me from '../pages/me';
 import notFound from '../pages/notFound';
+import RandomMeal from '../pages/randomMeal';
 import Skills from '../pages/skills';
 
 const Routes: React.FC = () => (
@@ -19,6 +20,7 @@ const Routes: React.FC = () => (
 
       <Route path='/lab' component={Lab} />
       <Route path='/background' component={ChangeBackground} />
+      <Route path='/random-meal' component={RandomMeal} />
       <Route component={notFound} />
     </Switch>
   </BrowserRouter>

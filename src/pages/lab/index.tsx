@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import backgroundChangeImg from '../../assets/background.gif';
+import randomMeal from '../../assets/randomMeal.gif';
 import { Contender, Content, Header, HeaderButton, Item, ItemImg, ItemText, Links, Linkto, TextHeader } from './styles';
 const Lab: React.FC = () => {
   return (
@@ -16,52 +17,12 @@ const Lab: React.FC = () => {
       </Header>
       <Content>
         <Item>
-          <Linkto to='background'>
-            <ItemImg src={backgroundChangeImg} >
+          <Linkto to='random-meal'>
+            <ItemImg src={randomMeal} >
 
             </ItemImg>
             <ItemText>
-              ChangeBackgroundColor
-          </ItemText>
-          </Linkto>
-        </Item>
-        <Item>
-          <Linkto to='background'>
-            <ItemImg src={backgroundChangeImg} >
-
-            </ItemImg>
-            <ItemText>
-              ChangeBackgroundColor
-          </ItemText>
-          </Linkto>
-        </Item>
-        <Item>
-          <Linkto to='background'>
-            <ItemImg src={backgroundChangeImg} >
-
-            </ItemImg>
-            <ItemText>
-              ChangeBackgroundColor
-          </ItemText>
-          </Linkto>
-        </Item>
-        <Item>
-          <Linkto to='background'>
-            <ItemImg src={backgroundChangeImg} >
-
-            </ItemImg>
-            <ItemText>
-              ChangeBackgroundColor
-          </ItemText>
-          </Linkto>
-        </Item>
-        <Item>
-          <Linkto to='background'>
-            <ItemImg src={backgroundChangeImg} >
-
-            </ItemImg>
-            <ItemText>
-              ChangeBackgroundColor
+              Random Meal Generator
           </ItemText>
           </Linkto>
         </Item>
