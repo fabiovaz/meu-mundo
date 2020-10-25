@@ -13,7 +13,7 @@ export default createGlobalStyle`
     --webkit-font-smoothing: antialiased;
   }
   body, input, button{
-    font-family: 'Montserrat', serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 16px;
   }
   h1,h2,h3,h4,h5,h6,strong{

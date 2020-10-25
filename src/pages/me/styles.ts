@@ -10,20 +10,24 @@ height:100vh;
 }
 `;
 
-export const ContainerInformations = styled.div`
-height:80%;
+export const Container = styled.div`
+width:100%;
 display:flex;
 align-items:center;
 justify-content:center;
-margin-top:40px;
+height:80%;
+`;
+
+export const ContainerInformations = styled.div`
+max-width:1120px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 aside{
-  margin-right:5px;
   img{
-    margin:0 20px;
     border-radius:10px;
-    width:400px;
-    height:400px
-}
+    width:80%;
+  }
 }
 
 @media (max-width: 700px){
@@ -40,17 +44,17 @@ export const MyInformations = styled.div`
 border: 1px solid;
 margin:20px 15px;
 border-radius: 20px;
-width:700px;
+width:80%;
 box-shadow: 5px 5px 5px black;
 
 background:#f5f6fa;
 
 color: ${shade(0.05, "#222f3e")};
-font-weight:bold;
+font-weight:normal;
 
 h2{
   color: #222f3e;
-  font-size:30px;
+  font-size:25px;
   margin-top:20px;
   font-weight:bold;
   margin-left:13px;
@@ -62,9 +66,9 @@ p{
   line-height:1.2;
 
 }
-@media (max-width: 720px){
+@media (max-width: 760px){
   h2{
-  font-size:25px;
+  font-size:20px;
   }
   p{
     font-size:16px;

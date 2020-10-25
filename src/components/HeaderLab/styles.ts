@@ -2,11 +2,22 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
+export const Content = styled.div`
+`;
+
 export const Header = styled.div`
-width: 100%;
+width:100%;
+display:flex;
+align-items: center;
+justify-content:center;
+`;
+
+export const HeaderContent = styled.div`
+width: 1120px;
 color: #222f3e;
 display:flex;
 align-items:center;
+
 height:50px;
 
 @media (max-width: 700px){
@@ -15,7 +26,7 @@ height:50px;
   align-items:center;
   justify-content:center;
   flex-direction:column;
-  height:200px;
+  height:150px;
 }
 
 `;

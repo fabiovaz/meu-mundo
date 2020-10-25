@@ -6,14 +6,34 @@ interface ContentProps {
 
 export const Contender = styled.div`
 height:100vh;
+
+`;
+
+export const BackContent = styled.div`
+width:100%;
+height:80%;
+display:flex;
+align-self:center;
+align-content:center;
+align-items:center;
+justify-content:center;
+`;
+
+export const ViewContent = styled.div`
+width:1120px;
+height:100%;
+overflow:hidden;
 `;
 
 export const Content = styled.div<ContentProps>`
-margin: 5% 5% 0 5%;
-height:80%;
+margin: 3%;
 display:flex;
+align-self:center;
+align-content:center;
 align-items:center;
 justify-content:center;
+max-width:1120px;
+height:100%;
 animation-play-state: ${props => (props.play ? 'running' : 'paused')};
 background-color: rgb(255,255,255);
     animation-name: colorchange;

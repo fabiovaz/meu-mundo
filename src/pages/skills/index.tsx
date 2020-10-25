@@ -1,6 +1,6 @@
 import React from 'react';
 import HeaderMe from '../../components/HeaderMe';
-import { CartSkills, Container, ContainerInformation } from './styles';
+import { CartSkills, Container, ContainerInformation, Content } from './styles';
 
 
 const Skills: React.FC = () => {
@@ -8,104 +8,106 @@ const Skills: React.FC = () => {
   return (
     <Container>
       <HeaderMe />
-      <ContainerInformation>
-        <CartSkills>
-          <h2>Linguagens e Banco de dados:</h2>
+      <Content>
+        <ContainerInformation>
+          <CartSkills>
+            <h2>Linguagens e Banco de dados:</h2>
 
-          <ul>
-            <li>
-              Javascript: Intermediário;
+            <ul>
+              <li>
+                Javascript: Intermediário;
             </li>
-            <li>
-              NodeJs: Intermediário;
+              <li>
+                NodeJs: Intermediário;
             </li>
-            <li>
-              ReactJs: Intermediário;
+              <li>
+                ReactJs: Intermediário;
             </li>
-            <li>
-              React Native: Intermediário;
+              <li>
+                React Native: Intermediário;
             </li>
-            <li>
-              PHP: Intermediário;
+              <li>
+                PHP: Intermediário;
             </li>
-            <li>
-              Laravel: Intermediário;
+              <li>
+                Laravel: Intermediário;
             </li>
-            <li>
-              MySQL: Intermediário;
+              <li>
+                MySQL: Intermediário;
             </li>
-            <li>
-              Postgres: Intermediário;
+              <li>
+                Postgres: Intermediário;
             </li>
-            <li>
-              Redis: Básico;
+              <li>
+                Redis: Básico;
             </li>
-            <li>
-              mongodb: Básico;
+              <li>
+                mongodb: Básico;
             </li>
-          </ul>
-        </CartSkills>
+            </ul>
+          </CartSkills>
 
-        <CartSkills>
-          <h2>Boas Praticas:</h2>
+          <CartSkills>
+            <h2>Boas Praticas:</h2>
 
-          <ul>
-            <li>
-              SOLID
+            <ul>
+              <li>
+                SOLID
             </li>
-            <li>
-              TDD
+              <li>
+                TDD
             </li>
-            <li>
-              DDD
+              <li>
+                DDD
             </li>
-            <li>
-              Microservices
+              <li>
+                Microservices
             </li>
-            <li>
-              MVC
+              <li>
+                MVC
             </li>
-            <li>
-              RestFull
+              <li>
+                RestFull
             </li>
-            <li>
-              Clean Code
+              <li>
+                Clean Code
             </li>
-          </ul>
-        </CartSkills>
+            </ul>
+          </CartSkills>
 
-        <CartSkills>
-          <h2>Pessoais:</h2>
+          <CartSkills>
+            <h2>Pessoais:</h2>
 
-          <ul>
-            <li>
-              Bonito
+            <ul>
+              <li>
+                Bonito
             </li>
-            <li>
-              Determinado
+              <li>
+                Determinado
             </li>
-            <li>
-              Comunicativo | "Falador se preferir"
+              <li>
+                Comunicativo | "Falador se preferir"
             </li>
-            <li>
-              Esforçado
+              <li>
+                Esforçado
             </li>
-            <li>
-              Focado
+              <li>
+                Focado
             </li>
-            <li>
-              Autodidata
+              <li>
+                Autodidata
             </li>
-            <li>
-              Engraçado | "Não é Ave Maria, mas é cheio de graça"
+              <li>
+                Engraçado | "Não é Ave Maria, mas é cheio de graça"
             </li>
-            <li>
-              Ja disse Bonito Lindo e Maravilhoso
+              <li>
+                Ja disse Bonito Lindo e Maravilhoso
             </li>
-          </ul>
-        </CartSkills>
+            </ul>
+          </CartSkills>
 
-      </ContainerInformation>
+        </ContainerInformation>
+      </Content>
     </Container>
   );
 }

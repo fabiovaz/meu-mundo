@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import HeaderLab from '../../components/HeaderLab';
 import apiRandomMeal from '../../services/apiRandomMeal';
 import { MealDTO } from './mealDTO';
-import { Conteiner, ItemIngredients, ListIngredients, MealButton, MealContent, MealImg, MealInformation, MealIngredients, MealInstructions, MealText, MealTypes, MealTypesItem, MealTypesText, MealView } from './styles';
+import { Conteiner, ItemIngredients, ListIngredients, MealButton, MealConteiner, MealContent, MealImg, MealInformation, MealIngredients, MealInstructions, MealRequirements, MealSize, MealText, MealTypes, MealTypesItem, MealTypesText, MealView } from './styles';
 
 
 const RandomMeal: React.FC = () => {
@@ -38,34 +38,44 @@ const RandomMeal: React.FC = () => {
     <Conteiner  >
       <HeaderLab title="Random Meal Generator" />
 
-      <MealView>
-        <MealButton onClick={hadleMealGet} >
-          🍽 Gerar Receita 🍽
+      <MealConteiner>
+        <MealSize>
+          <MealView>
+            <MealButton onClick={hadleMealGet} >
+              🍽 Gerar Receita 🍽
         </MealButton>
-        {meal &&
-          <MealContent>
-            <MealText>{meal.strMeal}</MealText>
-            <MealInformation>
-              <MealImg src={meal.strMealThumb} />
-              <MealInstructions>
-                {meal.strInstructions}
-              </MealInstructions>
-            </MealInformation>
-            <MealTypes>
-              <MealTypesItem>Category: <MealTypesText>{meal.strCategory}</MealTypesText> </MealTypesItem>
-              <MealTypesItem>Country: <MealTypesText>{meal.strArea}</MealTypesText> </MealTypesItem>
-              <MealTypesItem>Tags: <MealTypesText>{meal.strTags}</MealTypesText> </MealTypesItem>
-            </MealTypes>
+            {meal &&
+              <MealContent>
+                <MealText>{meal.strMeal}</MealText>
+                <MealInformation>
 
-            <MealIngredients>
-              <h3>Ingredients:</h3>
-              <ListIngredients>
-                {ingredients(meal)}
-              </ListIngredients>
-            </MealIngredients>
-          </MealContent>
-        }
-      </MealView>
+                  <MealImg src={meal.strMealThumb} />
+
+                  <MealRequirements>
+                    <MealTypes>
+                      <MealTypesItem>Category: <MealTypesText>{meal.strCategory}</MealTypesText> </MealTypesItem>
+                      <MealTypesItem>Country: <MealTypesText>{meal.strArea}</MealTypesText> </MealTypesItem>
+                      {meal.strTags && <MealTypesItem>Tags: <MealTypesText>{meal.strTags}</MealTypesText> </MealTypesItem>}
+                    </MealTypes>
+                    <MealIngredients>
+                      <h3>Ingredients:</h3>
+                      <ListIngredients>
+                        {ingredients(meal)}
+                      </ListIngredients>
+                    </MealIngredients>
+                  </MealRequirements>
+                </MealInformation>
+                <MealInstructions>
+                  <h3>Instructions:</h3>
+                  <p>
+                    {meal.strInstructions}
+                  </p>
+                </MealInstructions>
+              </MealContent>
+            }
+          </MealView>
+        </MealSize>
+      </MealConteiner>
     </Conteiner >
   );
 }

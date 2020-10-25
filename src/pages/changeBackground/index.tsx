@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import HeaderLab from '../../components/HeaderLab';
-import { ButtonPlay, Contender, Content } from './styles';
+import { BackContent, ButtonPlay, Contender, Content, ViewContent } from './styles';
 
 
 const ChangeBackground: React.FC = () => {
@@ -8,11 +8,15 @@ const ChangeBackground: React.FC = () => {
   return (
     <Contender>
       <HeaderLab title='ChangeBackgroud' />
-      <Content play={play} >
-        <ButtonPlay onClick={() => setPlay(!play)} >
-          {play ? 'Stop!' : 'Play!'}
-        </ButtonPlay>
-      </Content>
+      <BackContent>
+        <ViewContent>
+          <Content play={play} >
+            <ButtonPlay onClick={() => setPlay(!play)} >
+              {play ? 'Stop!' : 'Play!'}
+            </ButtonPlay>
+          </Content>
+        </ViewContent>
+      </BackContent>
     </Contender>
   )
 };

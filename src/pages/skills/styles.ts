@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const Container = styled.div`
 height:100vh;
 
@@ -6,7 +7,19 @@ height:100vh;
   height:100%
 }
 `;
+
+export const Content = styled.div`
+height:80%;
+
+display:flex;
+align-items:center;
+align-self:center;
+justify-content:center;
+`;
+
+
 export const ContainerInformation = styled.div`
+max-width:1120px;
 margin-top:20px;
 height:80%;
 color: #222f3e;
