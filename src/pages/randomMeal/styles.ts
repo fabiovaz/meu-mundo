@@ -4,7 +4,7 @@ export const Conteiner = styled.div`
 `;
 
 export const MealConteiner = styled.div`
-
+text-align:center;
 width:100%;
 display:flex;
 align-items:center;
