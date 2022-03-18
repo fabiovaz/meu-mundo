@@ -69,9 +69,6 @@ const Skills: React.FC = () => {
               <li>
                 RestFull
             </li>
-              <li>
-                Clean Code
-            </li>
             </ul>
           </CartSkills>
 
